@@ -1,0 +1,3 @@
+correct syntax for --execute:
+bhpnet -l -p 9999 -edir
+where "dir" is the file to be run on local machine ie C:\>dir
