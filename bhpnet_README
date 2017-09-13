@@ -6,3 +6,4 @@ where "dir" is the file to be run on local machine ==> C:\>dir
 Correct usage for -u
 bhpnet -l -p 9999 -uc:\\temp\\inject.txt ==> listener
 cat inject.txt | ./bhpnet.py -t 192.168.1.123 -p 9999 ==> client
+CTRL-C to send file
