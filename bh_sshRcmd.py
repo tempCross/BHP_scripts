@@ -23,5 +23,5 @@ def ssh_command(ip, user, passwd, command):
                 ssh_session.send(str(e))
         client.close()
     return
-ssh_command('192.168.1.206','root', 'toor', 'Connected ;-)')
+ssh_command('ip address','uname', 'passwd', 'Connected ;-)')
     
