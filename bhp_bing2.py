@@ -12,7 +12,7 @@ import re
 import base64
 import threading
 
-bing_api_key = "c7c5c57465544c34bff6f76eaf48220e"
+bing_api_key = "Bing key"
 
 
 class BurpExtender(IBurpExtender, IContextMenuFactory):
@@ -68,7 +68,7 @@ class BurpExtender(IBurpExtender, IContextMenuFactory):
     def bing_query(self, bing_query_string):
         print "Performing Bing search: %s" % bing_query_string
         # encode our query
-        quoted_query = urllib.quote("52.179.13.227")
+        quoted_query = urllib.quote("ip address or hostname")
         #print "%s" % quoted_query
         http_request = "GET https://api.cognitive.microsoft.com/bing/v5.0/search?q=%s HTTP/1.1\r\n" % quoted_query
         http_request += "Ocp-Apim-Subscription-Key: %s\r\n" % bing_api_key
