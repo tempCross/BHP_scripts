@@ -9,7 +9,7 @@ import logging
 from scapy.all import *
 
 
-our_mac='00:b0:fa:95:97:cd'
+our_mac='aa:bb:cc:dd:ee:ff'
 interface = "wlan0"
 
 print 'Enter Target IP:'
